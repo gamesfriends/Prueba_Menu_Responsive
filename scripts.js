@@ -8,18 +8,10 @@ const itemMainMenuContact = document.getElementById('main-menu-item__contact');
 
 
 buttonMenu.addEventListener('click', () => {
-    if (mainMenu.className == "main-menu hidden") {
+    if (mainMenu.className == "main-menu main-menu-hidden") {
         console.log('Click');
-        mainMenu.classList.replace('hidden', 'visible');
-        itemMainMenuIndex.classList.replace('hidden-item-menu', 'visible-item-menu');
-        itemMainMenuWe.classList.replace('hidden-item-menu', 'visible-item-menu');
-        itemMainMenuServices.classList.replace('hidden-item-menu', 'visible-item-menu');
-        itemMainMenuContact.classList.replace('hidden-item-menu', 'visible-item-menu');
+        mainMenu.classList.replace('main-menu-hidden', 'main-menu-visible');
     } else {
-        mainMenu.classList.replace('visible', 'hidden');
-        itemMainMenuIndex.classList.replace('visible-item-menu', 'hidden-item-menu');
-        itemMainMenuWe.classList.replace('visible-item-menu', 'hidden-item-menu');
-        itemMainMenuServices.classList.replace('visible-item-menu', 'hidden-item-menu');
-        itemMainMenuContact.classList.replace('visible-item-menu', 'hidden-item-menu');
+        mainMenu.classList.replace('main-menu-visible', 'main-menu-hidden');
     }
 })
