@@ -6,6 +6,11 @@
 body {
     background-color: #333;
     color: white;
+    /*agregado lo que sigue*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 
@@ -15,6 +20,9 @@ body {
     width: 100%;
     height: 30px;
     background-color: rgb(5, 83, 83);
+    line-height: 30px; /*centra el texto agregando espacio vacio arriba y abajo*/
+    position:fixed;/*mantiene la barraMenu siempre visible cuando hay scroll hacia abajo*/
+    z-index:100; /*para que quede por encima de los items en la animacion */
 }
 
 .barraMenu-Izq {
@@ -36,8 +44,33 @@ body {
 /* MENU OPCIONES */
 .main-menu {
     list-style: none;
-    background-color: rgb(5, 83, 83);
+   background-color: rgb(5, 83, 83);
+
+   /*esconder el mainMenu*/
+   position:absolute;
+   top:-200px; /*se sale el menu de la pantalla hacia arriba*/
+   overflow: hidden; /*que sea invisible lo que se sale de la pantalla*/
+
+   width:100%; /*para que ocupe todo el ancho del contenedor*/
+   z-index: 10; /*para que quede debajo de la barraMenu*/
 }
+
+
+.visible{
+    animation-name: aparecer; /*nombre de la animacion*/
+    animation-duration: 1s;/*duracion*/
+    animation-fill-mode: forwards;/*esto indica el estado final, en este caso forwards
+    le dice que quede como queda cuando keyframes llega al 100%, sino la animacion 
+    vuelve al inicio y queda como estaba antes de iniciar(main-menu escondida)*/
+}
+@keyframes aparecer {
+   /*al llegar al 100% top tiene que tener 30px y position relative para que empuje
+   el contenido que sigue*/
+    100%{
+        top:30px; 
+        position:relative;
+    }
+} 
 
 .main-menu-item {
     text-align: center;
