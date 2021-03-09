@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    color: white;
+}
+
+
+/*    **** MENU PRINCIPAL ****    */
+/* BARRA SUPERIOR */
+.barraMenu {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(5, 83, 83);
+}
+
+.barraMenu-Izq {
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    float: left;
+}
+
+.barraMenu-Der {
+    width: 10%;
+    height: 30px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+}
+/* BARRA SUPERIOR */
+
+/* MENU OPCIONES */
+.main-menu {
+    list-style: none;
+    background-color: rgb(5, 83, 83);
+}
+
+.main-menu-item {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.main-menu-item__link {
+    text-decoration: none;
+    color: rgb(4, 4, 48);
+    font-weight: bold;
+}
+
+.hidden-item-menu {
+    display: none;
+}
+
+.visible-item-menu {
+    display: block;
+}
+
+.icon-item-menu {
+    margin-right: 1em   ;
+}
+/* MENU OPCIONES */
+/*    **** MENU PRINCIPAL ****    */
+
+
+/*    **** ARTICULOS ****    */
+
+.article-history {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: wheat;
+}
+
+.article-services {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.article-products {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: wheat;
+}
+/*    **** ARTICULOS ****    */
+
+
+/*    **** PIE DE PAGINA ****    */
+.footer {
+    background-color: rgb(121, 109, 109);
+    color: black;
+    padding: 0.2em;
+}
+
+.footer-items-menu__link {
+    text-decoration: none;
+    color: rgb(97, 26, 26);
+    font-weight: bold;
+}
+
+.footer-items-menu, .footer-contact_name, .footer-contact_phone, .footer-contact_email {
+    text-align: center;
+}
+/*    **** PIE DE PAGINA ****    */
