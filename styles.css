@@ -48,6 +48,9 @@ body {
     text-decoration: none;
     color: rgb(4, 4, 48);
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hidden-item-menu {
