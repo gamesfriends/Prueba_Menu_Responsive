@@ -53,13 +53,15 @@ body {
     justify-content: center;
 }
 
-.hidden-item-menu {
+/*Estilos de oculatamiento y muestra del menu*/
+.main-menu-hidden {
     display: none;
 }
 
-.visible-item-menu {
+.main-menu-visible {
     display: block;
 }
+/*Estilos de oculatamiento y muestra del menu*/
 
 .icon-item-menu {
     margin-right: 1em   ;
